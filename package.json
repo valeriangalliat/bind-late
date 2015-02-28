@@ -1,0 +1,43 @@
+{
+  "name": "bind-late",
+  "version": "1.0.0",
+  "description": "Late binding of overridable object properties.",
+  "keywords": [
+    "bind",
+    "late",
+    "overridable",
+    "lazy",
+    "composite"
+  ],
+  "license": {
+    "type": "Unlicense",
+    "url": "http://unlicense.org/"
+  },
+  "author": {
+    "name": "Valérian Galliat",
+    "url": "http://val.codejam.info/"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "UNLICENSE"
+  ],
+  "homepage": "https://github.com/valeriangalliat/bind-late",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valeriangalliat/bind-late"
+  },
+  "dependencies": {
+    "lazy-object": "^1.0.1",
+    "make-overridable": "^1.0.3",
+    "traverse": "^0.6.6"
+  },
+  "devDependencies": {
+    "babel": "^4.4.5"
+  },
+  "scripts": {
+    "build": "babel index.es6.js -o index.js",
+    "prepublish": "$npm_package_scripts_build",
+    "test": "$npm_package_scripts_build && babel-node test.js"
+  }
+}
