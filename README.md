@@ -47,3 +47,9 @@ const c = b.override({
 c.b.d === 12 // 6 + 6
 c.e === 10 // 12 - 2
 ```
+
+Demo
+----
+
+See the [demo](demo) directory to see a slightly more concrete usage
+example.
