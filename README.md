@@ -4,6 +4,18 @@
 
 [overridable]: https://github.com/valeriangalliat/make-overridable
 
+Description
+-----------
+
+Define an overridable object where special "late binded" functions will
+be treated as lazy memoized properties.
+
+All the functions in the object structure that are anonymous and take a
+single `_` argument, are considered to be "late bindings". When the
+property is accessed the first time, they are called with the final
+overridden object as `_` parameter, and their return value is affected
+to the property.
+
 Example
 -------
 
