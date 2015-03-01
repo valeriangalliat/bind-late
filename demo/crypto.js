@@ -9,8 +9,6 @@ const mkCipher = create => (algo, key) =>
     return await pipec(stream)
   }
 
-module.exports = {
-  cipher: mkCipher(crypto.createCipher),
-  decipher: mkCipher(crypto.createDecipher),
-  rand: denodeify(crypto.randomBytes),
-}
+export const cipher = mkCipher(crypto.createCipher)
+export const decipher = mkCipher(crypto.createDecipher)
+export const rand = denodeify(crypto.randomBytes)

@@ -18,7 +18,7 @@ const requestKey = ({ serialize, getCipher }) =>
 const displayKey = ({ encode, wrap, decorateKey }) =>
   key => decorateKey(wrap(encode(key)))
 
-module.exports = bindLate({
+export default bindLate({
   crypto: {
     algo: 'AES256',
     keySize: 256,
