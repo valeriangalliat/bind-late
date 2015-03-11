@@ -29,10 +29,6 @@ decrypting the token, checking the data and current time for expiration.
 
 [overridable]: https://github.com/valeriangalliat/make-overridable
 
-* [`crypto.js`](crypto.js) and [`util.js`](util.js) contains helper
-  functions used by `index.js`. Nothing important for the understanding
-  here.
-
 * [`test.js`](test.js) is the demo code, using the `index.js` API and
   showing how to override the configuration object (remember
   **everything** is in the configuration object).

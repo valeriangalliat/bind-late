@@ -1,10 +1,7 @@
 {
   "dependencies": {
-    "babel-runtime": "^4.5.0",
-    "bind-late": "^1.0.1",
-    "concat-stream": "^1.4.7",
-    "es6-denodeify": "^0.1.1",
-    "promisepipe": "^1.0.1"
+    "crypto-promise": "^1.0.0",
+    "es6-denodeify": "^0.1.1"
   },
   "devDependencies": {
     "babel": "^4.4.5"
