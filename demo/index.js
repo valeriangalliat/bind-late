@@ -24,7 +24,7 @@ export default bindLate({
   },
 
   crypto: {
-    algo: 'AES256',
+    algo: 'aes256',
     keySize: 256,
 
     getKey: _ => _.crypto.key
