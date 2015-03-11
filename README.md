@@ -48,8 +48,13 @@ c.b.d === 12 // 6 + 6
 c.e === 10 // 12 - 2
 ```
 
+You can also watch the [antisocial-auth source code][aa] for a more
+concrete example, where everything is overridable thanks to bind-late.
+
+[aa]: https://github.com/valeriangalliat/antisocial-auth/blob/master/src/index.js
+
 Demo
 ----
 
-See the [demo](demo) directory to see a slightly more concrete usage
-example.
+See the [demo](demo) directory to see a functional example you can tweak
+and play with.
