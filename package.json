@@ -1,6 +1,6 @@
 {
   "name": "bind-late",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Late binding of overridable object properties.",
   "keywords": [
     "bind",
