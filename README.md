@@ -16,6 +16,15 @@ property is accessed the first time, they are called with the final
 overridden object as `_` parameter, and their return value is affected
 to the property.
 
+Nesting
+-------
+
+You can nest late binded objects. Late binded objects are not plain
+objects and will not be recursively extended during an `override`, so
+you need to extend them explicitely (this is often what you want,
+since `override` would otherwise just copy your properties and not
+rebuild the inner late binded object according to what you changed).
+
 Example
 -------
 

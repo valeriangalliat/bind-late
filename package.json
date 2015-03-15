@@ -28,9 +28,10 @@
     "url": "https://github.com/valeriangalliat/bind-late.git"
   },
   "dependencies": {
+    "is-plain-object": "^1.0.0",
     "lazy-object": "^1.0.1",
     "make-overridable": "^1.0.3",
-    "traverse": "^0.6.6"
+    "object-assign": "^2.0.0"
   },
   "devDependencies": {
     "babel": "^4.4.5"

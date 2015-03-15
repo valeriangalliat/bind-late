@@ -8,6 +8,10 @@ const a = bindLate({
     d: _ => _.a + _.b.c,
   },
   e: _ => _.b.d * 2,
+
+  f: bindLate({
+    g: _ => { throw new Error('Should never be called.') },
+  }),
 })
 
 assert.equal(a.b.d, 10)
