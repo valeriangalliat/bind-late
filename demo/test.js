@@ -68,4 +68,4 @@ async () => {
   // 43e8671d35b8f902b507a3fc3611f4ac
   // -----END KEY-----
 }()
-  .then(null, err => setTimeout(() => { throw err }))
+  .then(null, require('promise-done'))
