@@ -10,10 +10,7 @@
     "composite"
   ],
   "homepage": "https://github.com/valeriangalliat/bind-late",
-  "license": {
-    "type": "Unlicense",
-    "url": "http://unlicense.org/"
-  },
+  "license": "Unlicense",
   "author": {
     "name": "Valérian Galliat",
     "url": "http://val.codejam.info/"
