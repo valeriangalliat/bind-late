@@ -20,7 +20,7 @@ export default bindLate({
         await (await getCipher())(serialize({ data, time: Date.now() })),
 
     displayKey: ({ encode, wrap, decorateKey }) =>
-      key => decorateKey(wrap(encode(key))),
+      key => decorateKey(wrap(encode(key)))
   },
 
   crypto: {
@@ -32,7 +32,7 @@ export default bindLate({
       : () => randomBytes(_.crypto.keySize),
 
     getCipher: _ => getCipher(cipher, _.crypto.algo, _.crypto.getKey),
-    getDecipher: _ => getCipher(decipher, _.crypto.algo, _.crypto.getKey),
+    getDecipher: _ => getCipher(decipher, _.crypto.algo, _.crypto.getKey)
   },
 
   display: {
@@ -45,7 +45,7 @@ export default bindLate({
     decode: _ => _.core.decode(_.display.encoding),
 
     wrap: _ => _.core.wrap(_.display.wrapWidth),
-    decorateKey: _ => _.core.decorateKey(_.display.beginTag, _.display.endTag),
+    decorateKey: _ => _.core.decorateKey(_.display.beginTag, _.display.endTag)
   },
 
   serialize: JSON.stringify,
@@ -59,6 +59,6 @@ export default bindLate({
   displayKey: _ => _.core.displayKey({
     encode: _.display.encode,
     wrap: _.display.wrap,
-    decorateKey: _.display.decorateKey,
-  }),
+    decorateKey: _.display.decorateKey
+  })
 })

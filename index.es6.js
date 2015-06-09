@@ -21,7 +21,7 @@ const traverse = (object, f, root = object) =>
 
 const isUnderscored = f => f.toString().substr(0, 12) === 'function (_)'
 const isLateBinding = x => x instanceof Function && isUnderscored(x)
-function Dumb(object) { assign(this, object) }
+function Dumb (object) { assign(this, object) }
 
 const doBindLate = object =>
   traverse(object, (value, key, node) => {

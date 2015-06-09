@@ -25,8 +25,8 @@ async () => {
   const hexTagApi = hexApi.override({
     display: {
       beginTag: '=====BEGIN KEY=====',
-      endTag: '=====END KEY=====',
-    },
+      endTag: '=====END KEY====='
+    }
   })
 
   await test(hexTagApi)('Look! Custom tag!')
@@ -41,8 +41,8 @@ async () => {
   const noTagApi = api.override({
     display: {
       wrapWidth: 16,
-      decorateKey: key => key,
-    },
+      decorateKey: key => key
+    }
   })
 
   await test(noTagApi)('This key is not decorated, and wrapped to 16 characters.')
