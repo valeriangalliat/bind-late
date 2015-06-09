@@ -5,9 +5,15 @@
   },
   "devDependencies": {
     "babel": "^4.4.5",
-    "promise-done": "^1.0.0"
+    "babel-eslint": "^3.1.14",
+    "promise-done": "^1.0.0",
+    "standard": "^4.0.1"
   },
   "scripts": {
-    "start": "babel-node test.js"
+    "start": "babel-node test.js",
+    "test": "standard index.es6.js test.js"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
