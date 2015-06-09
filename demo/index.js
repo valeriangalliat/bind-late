@@ -1,5 +1,5 @@
 const bindLate = require('../index.es6.js')
-const { cipher, randomBytes } = require('crypto-promise')
+const { cipher, decipher, randomBytes } = require('crypto-promise')
 
 const getCipher = (cipher, algo, getKey) =>
   async () => await cipher(algo, await getKey())
